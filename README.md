@@ -26,12 +26,49 @@ box ~ base image for a vm, usually defining the underlying os and eventual insta
 
 boxes at **[Vagrant Cloud](https://app.vagrantup.com/boxes/search)**, or alternatively created by us.
 
+```sh
+vagrant init  # new Vagrantfile
+```sh
 
+```rb
+Vagrant.configure("2") do |config|
+  config.vm.box = "base"
+end
+```
 
+```sh
+vagrant up
+The provider 'virtualbox' that was requested to back the machine 'default' 
+is reporting that it isn't usable on this system. The reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+```
+
+Vagrant precisa un hipervisor. Pude ser Virtual Box u otro, pero lo necesita por debajo.
+Ver [esto](https://tecnolitas.com/blog/laboratorio-multi-maquina-con-vagrant/) 
+
+- [ ] VER: https://github.com/ppggff/vagrant-qemu
+
+No VirtualBox en ubuntu 23.10 ?
+Ver [QEMU/KVM stack with Virt-manager as GUI](https://askubuntu.com/questions/1491265/ubuntu-23-10-no-virtualbox-available-what-can-be-done)
+
+[howto-install-qemu-on-ubuntu-23-10](https://askubuntu.com/questions/1490805/how-do-i-install-qemu-on-ubuntu-23-10)
+
+QEMU: quoting [https://www.qemu.org/download/#linux](https://www.qemu.org/download/#linux) 
+- For full system emulation run: `apt-get install qemu-system`
+- For emulating Linux binaries run: `apt-get install qemu-user-static`
 
 - [ ] 3. inicio la máquina virtual --> vagrant up
 - [ ] 4. conexión a la máquina virtual--> vagrant ssh
 - [ ] 5. creo un holamundo en un editor de texto nano
 
-
-
+sudo apt install 
+qemu -> qemu-system
+qemu-kvm -> 
+libvirt-daemon 
+libvirt-daemon-system 
+libvirt-clients 
+bridge-utils
