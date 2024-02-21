@@ -51,7 +51,7 @@ Vagrant precisa un hipervisor. Pude ser Virtual Box u otro, pero lo necesita por
 Ver [esto](https://tecnolitas.com/blog/laboratorio-multi-maquina-con-vagrant/) 
 
 - [ ] VER: https://github.com/ppggff/vagrant-qemu
-- [ ] VER: https://www.youtube.com/watch?v=Zei8i9CpAn0 (Windows VM on Linux using QEMU/kvm/VirtIO // Ditch Your VirtualBox!)
+- [ ] VER: k (Windows VM on Linux using QEMU/kvm/VirtIO // Ditch Your VirtualBox!)
 
 No VirtualBox en ubuntu 23.10 ? Pues Mejor.
 Ver [QEMU/KVM stack with Virt-manager as GUI](https://askubuntu.com/questions/1491265/ubuntu-23-10-no-virtualbox-available-what-can-be-done)
